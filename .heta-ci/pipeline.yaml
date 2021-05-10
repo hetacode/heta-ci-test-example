@@ -1,0 +1,14 @@
+name: Build and run example project
+jobs:
+  - id: build_and_run
+    display_name: Build and run
+    runner: golang:1.16
+    tasks:
+      - id: build 
+        display_name: Build go project
+        command: |
+          go build -o example
+      - id: run
+        display_name: Run executable
+        command: |
+          ./example
