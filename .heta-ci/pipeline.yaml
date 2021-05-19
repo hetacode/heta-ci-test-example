@@ -1,4 +1,9 @@
 name: Build and run example project
+run_on:
+  - type: branch
+    on: develop
+  - type: branch
+    on: feature/*
 jobs:
   - id: build_and_run
     display_name: Build and run
