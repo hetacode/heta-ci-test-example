@@ -4,6 +4,10 @@ jobs:
     display_name: Build and run
     runner: golang:1.16
     tasks:
+      - id: copy_code
+        display_name: Copy source code to current directory
+        command: |
+          cp -r $AGENT_CODE_DIR .
       - id: build 
         display_name: Build go project
         command: |
