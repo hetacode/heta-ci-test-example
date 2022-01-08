@@ -1,8 +1,10 @@
 name: Build and run example project
 run_on:
   - type: branch
+    param: include
     on: develop
   - type: branch
+    param: include
     on: feature/*
 jobs:
   - id: build_and_run
