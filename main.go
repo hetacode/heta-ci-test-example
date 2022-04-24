@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println("test branch")
 	hostanme, _ := os.Hostname()
 	fmt.Println("hostname: " + hostanme)
 }
